@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalPulse - Update Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PedalPulse</h1>
+        <p>Citi Bike Data Explorer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="add.html">Add Trip</a>
+        <a href="delete.html">Delete Trip</a>
+        <a href="update.html">Update Trip</a>
+        <a href="documentation.html">Documentation</a>
+    </nav>
+
+    <main>
+        <h2>Update an Existing Trip</h2>
+
+        <p>
+            Use this form to specify changes to an existing
+            Citi Bike trip. Enter the Ride ID to identify
+            the record, then provide the updated information.
+        </p>
+
+        <section>
+            <h3>Trip Information</h3>
+
+            <form>
+                <label for="ride_id">Ride ID (Required):</label>
+                <input type="text" id="ride_id" name="ride_id"
+                       placeholder="Enter existing Ride ID" required>
+
+                <label for="rideable_type">Bicycle Type:</label>
+                <select id="rideable_type" name="rideable_type">
+                    <option value="">Keep existing value</option>
+                    <option value="classic_bike">Classic Bike</option>
+                    <option value="electric_bike">Electric Bike</option>
+                </select>
+
+                <label for="started_at">Start Date and Time:</label>
+                <input type="datetime-local" id="started_at"
+                       name="started_at">
+
+                <label for="ended_at">End Date and Time:</label>
+                <input type="datetime-local" id="ended_at"
+                       name="ended_at">
+
+                <label for="duration_minutes">Duration (Minutes):</label>
+                <input type="number" id="duration_minutes"
+                       name="duration_minutes" min="0" step="0.01"
+                       placeholder="Enter updated duration">
+
+                <label for="start_station_id">Start Station ID:</label>
+                <input type="text" id="start_station_id"
+                       name="start_station_id"
+                       placeholder="Enter updated start station">
+
+                <label for="end_station_id">End Station ID:</label>
+                <input type="text" id="end_station_id"
+                       name="end_station_id"
+                       placeholder="Enter updated end station">
+
+                <label for="member_casual">Rider Type:</label>
+                <select id="member_casual" name="member_casual">
+                    <option value="">Keep existing value</option>
+                    <option value="member">Member</option>
+                    <option value="casual">Casual</option>
+                </select>
+
+                <button type="submit">Update Trip</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Instructions</h3>
+            <p>
+                Enter the Ride ID of the trip you want to update.
+                Fill in only the fields you want to change.
+                Leave other fields blank to indicate that
+                their existing values should be preserved.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PedalPulse | Wayne State University</p>
+    </footer>
+
+</body>
+</html>
