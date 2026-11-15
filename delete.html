@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalPulse - Delete Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PedalPulse</h1>
+        <p>Citi Bike Data Explorer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="add.html">Add Trip</a>
+        <a href="delete.html">Delete Trip</a>
+        <a href="update.html">Update Trip</a>
+        <a href="documentation.html">Documentation</a>
+    </nav>
+
+    <main>
+        <h2>Delete an Existing Trip</h2>
+
+        <p>
+            Use the form below to identify a Citi Bike trip
+            that should be removed from the database.
+            Enter the unique Ride ID of the trip.
+        </p>
+
+        <section>
+            <h3>Trip Deletion Form</h3>
+
+            <form>
+                <label for="ride_id">Ride ID:</label>
+                <input
+                    type="text"
+                    id="ride_id"
+                    name="ride_id"
+                    placeholder="Enter the Ride ID to delete"
+                    required
+                >
+
+                <button type="submit">Delete Trip</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Important Information</h3>
+            <p>
+                Each trip has a unique Ride ID.
+                Make sure you enter the correct ID
+                before requesting deletion.
+            </p>
+            <p>
+                This page demonstrates the user interface
+                for deleting trip records.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PedalPulse | Wayne State University</p>
+    </footer>
+
+</body>
+</html>
