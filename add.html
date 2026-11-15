@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalPulse - Add Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PedalPulse</h1>
+        <p>Citi Bike Data Explorer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="add.html">Add Trip</a>
+        <a href="delete.html">Delete Trip</a>
+        <a href="update.html">Update Trip</a>
+        <a href="documentation.html">Documentation</a>
+    </nav>
+
+    <main>
+        <h2>Add a New Trip</h2>
+
+        <p>
+            Use the form below to enter information about a
+            new Citi Bike trip. All required fields must be
+            completed before submitting.
+        </p>
+
+        <form>
+            <label for="ride_id">Ride ID:</label>
+            <input type="text" id="ride_id" name="ride_id"
+                   placeholder="Enter unique ride ID" required>
+
+            <label for="rideable_type">Bicycle Type:</label>
+            <select id="rideable_type" name="rideable_type" required>
+                <option value="">Select bicycle type</option>
+                <option value="classic_bike">Classic Bike</option>
+                <option value="electric_bike">Electric Bike</option>
+            </select>
+
+            <label for="started_at">Start Date and Time:</label>
+            <input type="datetime-local" id="started_at"
+                   name="started_at" required>
+
+            <label for="ended_at">End Date and Time:</label>
+            <input type="datetime-local" id="ended_at"
+                   name="ended_at" required>
+
+            <label for="duration_minutes">Duration (Minutes):</label>
+            <input type="number" id="duration_minutes"
+                   name="duration_minutes" step="0.01"
+                   min="0" placeholder="Enter trip duration" required>
+
+            <label for="start_station_id">Start Station ID:</label>
+            <input type="text" id="start_station_id"
+                   name="start_station_id"
+                   placeholder="Enter starting station ID" required>
+
+            <label for="end_station_id">End Station ID:</label>
+            <input type="text" id="end_station_id"
+                   name="end_station_id"
+                   placeholder="Enter ending station ID" required>
+
+            <label for="member_casual">Rider Type:</label>
+            <select id="member_casual" name="member_casual" required>
+                <option value="">Select rider type</option>
+                <option value="member">Member</option>
+                <option value="casual">Casual</option>
+            </select>
+
+            <button type="submit">Add Trip</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PedalPulse | Wayne State University</p>
+    </footer>
+
+</body>
+</html>
