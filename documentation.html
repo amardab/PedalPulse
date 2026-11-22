@@ -27,129 +27,479 @@
 
         <section>
             <h3>1. Project Overview</h3>
+
             <p>
                 PedalPulse is a web-based database application
-                designed to organize and explore historical
-                Citi Bike trip information.
+                developed to organize, manage, and explore
+                historical Citi Bike trip information.
+                The application was developed as part of a
+                database systems project at Wayne State University.
             </p>
+
             <p>
                 Our project uses cleaned Citi Bike data from
                 September 2026, containing 106,294 trip records
                 and 222 bicycle stations.
+                The data is stored in a PostgreSQL database
+                consisting of two tables: trips and stations.
             </p>
+
             <p>
-                The application interface provides webpages for
-                adding, deleting, and updating trip information.
+                The application uses HTML and CSS for webpage
+                design, JavaScript and AJAX for communication
+                with the server, and PHP with PDO for connecting
+                to the PostgreSQL database.
+            </p>
+
+            <p>
+                PedalPulse provides webpages for adding,
+                deleting, and updating bicycle trip records.
+                The Delete Trip functionality has been
+                implemented and successfully tested using
+                PHP, JavaScript, and PostgreSQL.
+                The Add Trip and Update Trip interfaces
+                are available, with backend functionality
+                still under development.
             </p>
         </section>
 
         <section>
             <h3>2. Application and Team Information</h3>
-            <p><strong>Application Name:</strong> PedalPulse</p>
-            <p><strong>Institution:</strong> Wayne State University</p>
-            <p><strong>Development Team:</strong>
+
+            <p>
+                <strong>Application Name:</strong> PedalPulse
+            </p>
+
+            <p>
+                <strong>Institution:</strong>
+                Wayne State University
+            </p>
+
+            <p><strong>Development Team:</strong></p>
             <ul>
-                <li>Amarda Brace - Database Developer & Testing Lead</li>
-                <li>Sophia Maher - Frontend Developer</li>
-                <li>Lucky Paul - Documentation</li>
+                <li>
+                    Amarda Brace - Database Developer
+                    &amp; Testing Lead
+                </li>
+                <li>
+                    Sophia Maher - Frontend Developer
+                </li>
+                <li>
+                    Lucky Paul - Documentation
+                </li>
             </ul>
+
+            <p>
+                <strong>Design Team:</strong>
+                Amarda Brace - Website Design
             </p>
-            <p><strong>Design Team:</strong>
-                Amarda Brace - Website Design 
+
+            <p>
+                <strong>Management:</strong>
+                Dr. Farah Kamw, Assistant Professor of Teaching,
+                Wayne State University
             </p>
-            <p><strong>Management:</strong>
-                Dr. Farah Kamw, Assistant professor of Teaching Wayne State University
-            </p>
-            <p><strong>Web URL:</strong>
+
+            <p>
+                <strong>Web URL:</strong>
                 <a href="https://amardab.github.io/PedalPulse/">
                     https://amardab.github.io/PedalPulse/
                 </a>
+            </p>
+
+            <p>
+                The GitHub Pages website provides the
+                publicly accessible frontend interface.
+                Database operations are tested locally
+                using MAMP, PHP, and PostgreSQL.
             </p>
         </section>
 
         <section>
             <h3>3. Software Requirements</h3>
+
             <ul>
-                <li>Modern web browser (Chrome, Safari, or Firefox)</li>
-                <li>HTML5 and CSS3</li>
-                <li>PostgreSQL database management system</li>
-                <li>pgAdmin 4 for database administration</li>
-                <li>Local server for future backend integration</li>
+                <li>
+                    Modern web browser
+                    (Chrome, Safari, or Firefox)
+                </li>
+                <li>HTML5 for webpage structure</li>
+                <li>CSS3 for website styling and layout</li>
+                <li>
+                    JavaScript and AJAX for
+                    client-server communication
+                </li>
+                <li>PHP 8.3 for backend processing</li>
+                <li>
+                    PHP PDO with the PostgreSQL
+                    driver (pdo_pgsql)
+                </li>
+                <li>
+                    PostgreSQL 18 for database management
+                </li>
+                <li>
+                    pgAdmin 4 for database administration
+                    and SQL queries
+                </li>
+                <li>
+                    MAMP for running the local Apache
+                    and PHP server
+                </li>
+                <li>
+                    GitHub for source code management
+                    and collaboration
+                </li>
             </ul>
         </section>
 
         <section>
             <h3>4. Hardware Requirements</h3>
+
             <ul>
-                <li>Computer capable of running a modern browser</li>
+                <li>
+                    Computer capable of running
+                    a modern web browser
+                </li>
                 <li>Recommended: 8 GB RAM</li>
-                <li>Recommended: 12 GB available disk space</li>
-                <li>Internet connection for accessing GitHub</li>
+                <li>
+                    Recommended: 12 GB available disk space
+                </li>
+                <li>
+                    Internet connection for accessing GitHub
+                </li>
             </ul>
         </section>
 
         <section>
             <h3>5. Setup Instructions</h3>
-            <ol>
-                <li>Download the PedalPulse project files.</li>
-                <li>Extract the project ZIP folder.</li>
-                <li>Install PostgreSQL and pgAdmin 4 if database
-                    administration is required.</li>
-                <li>Restore the PedalPulse PostgreSQL database
-                    from the provided backup if available.</li>
-                <li>Open index.html in a web browser to view
-                    the website interface.</li>
-            </ol>
+
             <p>
-                For this HTML/CSS interface prototype, no backend
-                server is required. Opening index.html locally
-                displays the website.
+                The following instructions describe how to
+                set up and run PedalPulse locally with
+                PostgreSQL and MAMP.
+            </p>
+
+            <ol>
+                <li>
+                    Download the PedalPulse project files
+                    from the GitHub repository.
+                </li>
+
+                <li>
+                    Extract the downloaded ZIP folder.
+                </li>
+
+                <li>
+                    Install PostgreSQL 18 and pgAdmin 4.
+                </li>
+
+                <li>
+                    Create a PostgreSQL database named
+                    PedalPulse and restore the database
+                    from the provided backup.
+                </li>
+
+                <li>
+                    Verify that the database contains
+                    the trips and stations tables.
+                </li>
+
+                <li>
+                    Install MAMP and start the
+                    Apache server.
+                </li>
+
+                <li>
+                    Place the PedalPulse project files
+                    inside the MAMP htdocs directory.
+                </li>
+
+                <li>
+                    Configure the PHP database connection
+                    using the correct PostgreSQL host,
+                    port, database name, and username.
+                </li>
+
+                <li>
+                    Store the PostgreSQL password
+                    securely outside the public
+                    website directory.
+                </li>
+
+                <li>
+                    Open the local PedalPulse website
+                    through the MAMP server.
+                </li>
+            </ol>
+
+            <p>
+                <strong>Local Website Address:</strong>
+                <a href="http://localhost:8888/PedalPulse/">
+                    http://localhost:8888/PedalPulse/
+                </a>
+            </p>
+
+            <p>
+                The local application uses PHP with PDO
+                to communicate with PostgreSQL.
+                The Apache server and PostgreSQL server
+                must be running for database operations.
+            </p>
+
+            <p>
+                GitHub Pages hosts the static frontend
+                files but does not execute PHP.
+                Database functionality must therefore
+                be tested using a PHP-enabled server.
             </p>
         </section>
 
         <section>
             <h3>6. User Guide</h3>
-            <p><strong>Home:</strong>
-                Read the project introduction, dataset information,
-                and database overview.
-            </p>
-            <p><strong>Add Trip:</strong>
-                Enter the information for a new bicycle trip
-                using the form provided.
-            </p>
-            <p><strong>Delete Trip:</strong>
-                Enter the unique Ride ID of a trip that
-                should be deleted.
-            </p>
-            <p><strong>Update Trip:</strong>
-                Enter an existing Ride ID and provide the
-                information that should be changed.
-            </p>
-            <p><strong>Documentation:</strong>
-                Review project information, requirements,
-                setup instructions, and webpage descriptions.
-            </p>
+
             <p>
-                Note: The Add, Delete, and Update forms are
-                interface demonstrations. Database changes
-                require backend integration, which is not
-                included in this HTML/CSS prototype.
+                <strong>Home:</strong>
+                View the project introduction,
+                dataset information, and database overview.
+            </p>
+
+            <p>
+                <strong>Add Trip:</strong>
+                Open the Add Trip page and enter the
+                required bicycle trip information.
+                The interface is available, but backend
+                integration is still under development.
+            </p>
+
+            <p>
+                <strong>Delete Trip:</strong>
+                Open the Delete Trip page and enter
+                the unique Ride ID of the record
+                to be removed.
+            </p>
+
+            <p>
+                After clicking the Delete Trip button,
+                the application asks the user to confirm
+                the deletion.
+            </p>
+
+            <p>
+                Once confirmed, JavaScript sends an
+                AJAX POST request to the PHP backend.
+                PHP uses a prepared SQL statement
+                to delete the matching record
+                from the PostgreSQL trips table.
+            </p>
+
+            <p>
+                The webpage displays a success
+                message if the trip is deleted
+                or an error message if the
+                Ride ID cannot be found.
+            </p>
+
+            <p>
+                <strong>Update Trip:</strong>
+                Open the Update Trip page and enter
+                an existing Ride ID along with the
+                information that should be modified.
+                Backend integration is still
+                under development.
+            </p>
+
+            <p>
+                <strong>Documentation:</strong>
+                Review the project overview,
+                development team, software requirements,
+                setup instructions, database structure,
+                and dataset information.
+            </p>
+
+            <p>
+                <strong>Current Development Status:</strong>
+                The Delete Trip operation has been
+                successfully implemented and tested
+                using the local MAMP server and
+                PostgreSQL database.
+                Add Trip and Update Trip backend
+                functionality is not yet complete.
             </p>
         </section>
 
         <section>
             <h3>7. Dataset Source</h3>
+
             <p>
                 Historical trip data was obtained from
                 the official Citi Bike System Data website.
+                The dataset was cleaned and organized
+                before being imported into PostgreSQL.
             </p>
+
+            <p>
+                The project uses September 2026
+                Citi Bike trip information.
+                The imported dataset contains
+                106,294 trips and 222 stations.
+            </p>
+
             <p>
                 <a href="https://citibikenyc.com/system-data"
-                   target="_blank" rel="noopener noreferrer">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Visit Citi Bike System Data
                 </a>
             </p>
         </section>
+
+        <section>
+            <h3>8. Database Structure</h3>
+
+            <p>
+                PedalPulse uses a relational PostgreSQL
+                database named PedalPulse.
+                The database contains two main tables:
+                stations and trips.
+            </p>
+
+            <h4>Stations Table</h4>
+
+            <p>
+                The stations table stores information
+                about Citi Bike stations.
+                Each station is identified by
+                a unique station ID.
+            </p>
+
+            <ul>
+                <li>
+                    station_id - Unique station identifier
+                    and primary key
+                </li>
+                <li>
+                    station_name - Name of the bicycle station
+                </li>
+                <li>
+                    latitude - Geographic latitude
+                </li>
+                <li>
+                    longitude - Geographic longitude
+                </li>
+            </ul>
+
+            <h4>Trips Table</h4>
+
+            <p>
+                The trips table stores individual
+                Citi Bike ride records.
+                Each trip is identified by
+                a unique Ride ID.
+            </p>
+
+            <ul>
+                <li>
+                    ride_id - Unique trip identifier
+                    and primary key
+                </li>
+                <li>
+                    rideable_type - Type of bicycle used
+                </li>
+                <li>
+                    started_at - Trip starting date and time
+                </li>
+                <li>
+                    ended_at - Trip ending date and time
+                </li>
+                <li>
+                    duration_minutes - Total trip duration
+                </li>
+                <li>
+                    start_station_id - Starting station identifier
+                </li>
+                <li>
+                    end_station_id - Ending station identifier
+                </li>
+                <li>
+                    member_casual - Rider membership category
+                </li>
+            </ul>
+
+            <p>
+                The start_station_id and end_station_id
+                fields reference station identifiers
+                in the stations table.
+                This structure helps organize trip
+                information and station details
+                in separate relational tables.
+            </p>
+        </section>
+
+        <section>
+            <h3>9. Backend Implementation and Testing</h3>
+
+            <p>
+                PedalPulse uses JavaScript, AJAX,
+                PHP, and PostgreSQL to process
+                database operations.
+            </p>
+
+            <p>
+                For the Delete Trip operation,
+                JavaScript collects the Ride ID
+                entered by the user and sends
+                it to delete_trip.php using
+                an asynchronous POST request.
+            </p>
+
+            <p>
+                The PHP backend connects to
+                PostgreSQL through PDO and
+                executes a prepared DELETE statement
+                using the supplied Ride ID.
+            </p>
+
+            <p>
+                The backend returns a JSON response,
+                which JavaScript displays on the
+                Delete Trip webpage.
+            </p>
+
+            <p>
+                <strong>Testing Results:</strong>
+                The PostgreSQL database connection
+                was successfully tested using PHP.
+                The initial database contained
+                106,294 trip records.
+            </p>
+
+            <p>
+                A temporary test trip with the Ride ID
+                PEDALPULSE_DELETE_TEST_001 was inserted
+                into the trips table.
+            </p>
+
+            <p>
+                The record was deleted through the
+                Delete Trip webpage.
+                The application displayed the message
+                "Trip deleted successfully!"
+            </p>
+
+            <p>
+                A follow-up SQL SELECT query in pgAdmin 4
+                returned zero rows for the test Ride ID,
+                confirming that the record had been
+                removed from the PostgreSQL database.
+            </p>
+
+            <p>
+                This test verified communication between
+                the HTML form, JavaScript, PHP backend,
+                and PostgreSQL database.
+            </p>
+        </section>
+
     </main>
 
     <footer>
