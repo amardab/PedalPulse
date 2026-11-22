@@ -34,7 +34,7 @@
         <section>
             <h3>Trip Deletion Form</h3>
 
-            <form>
+            <form id="deleteTripForm">
                 <label for="ride_id">Ride ID:</label>
                 <input
                     type="text"
@@ -45,6 +45,7 @@
                 >
 
                 <button type="submit">Delete Trip</button>
+                <p id="deleteMessage" role="status" aria-live="polite"></p>
             </form>
         </section>
 
@@ -56,8 +57,8 @@
                 before requesting deletion.
             </p>
             <p>
-                This page demonstrates the user interface
-                for deleting trip records.
+                This page allows users to delete trip records from the 
+                PedalPulse database using their unique Ride ID.
             </p>
         </section>
     </main>
@@ -66,5 +67,6 @@
         <p>&copy; 2026 PedalPulse | Wayne State University</p>
     </footer>
 
+<script src="delete.js"></script>
 </body>
 </html>
