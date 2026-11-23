@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,14 +51,12 @@
             </p>
 
             <p>
-                PedalPulse provides webpages for adding,
+                PedalPulse provides complete webpages for adding,
                 deleting, and updating bicycle trip records.
-                The Delete Trip functionality has been
-                implemented and successfully tested using
-                PHP, JavaScript, and PostgreSQL.
-                The Add Trip and Update Trip interfaces
-                are available, with backend functionality
-                still under development.
+                All three CRUD operations (Add Trip, Delete Trip,
+                and Update Trip) use JavaScript fetch/AJAX POST
+                requests communicating with PHP PDO scripts to
+                modify records in the PostgreSQL database.
             </p>
         </section>
 
@@ -266,9 +263,11 @@
             <p>
                 <strong>Add Trip:</strong>
                 Open the Add Trip page and enter the
-                required bicycle trip information.
-                The interface is available, but backend
-                integration is still under development.
+                required bicycle trip information. Submitting
+                the form sends an AJAX POST request to
+                add_trip.php, which inserts the new record
+                into the PostgreSQL trips table via PDO and
+                displays a confirmation message.
             </p>
 
             <p>
@@ -303,9 +302,9 @@
                 <strong>Update Trip:</strong>
                 Open the Update Trip page and enter
                 an existing Ride ID along with the
-                information that should be modified.
-                Backend integration is still
-                under development.
+                fields to modify. Submitting sends an AJAX
+                POST request to update.php, which updates
+                the specified columns in PostgreSQL via PDO.
             </p>
 
             <p>
@@ -318,12 +317,10 @@
 
             <p>
                 <strong>Current Development Status:</strong>
-                The Delete Trip operation has been
-                successfully implemented and tested
-                using the local MAMP server and
-                PostgreSQL database.
-                Add Trip and Update Trip backend
-                functionality is not yet complete.
+                Add Trip, Delete Trip, and Update Trip
+                operations are fully implemented with
+                JavaScript AJAX and PHP PDO backends
+                connected to the local PostgreSQL database.
             </p>
         </section>
 

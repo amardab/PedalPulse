@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +33,7 @@
         <section>
             <h3>Trip Information</h3>
 
-            <form>
+            <form id="updateTripForm">
                 <label for="ride_id">Ride ID (Required):</label>
                 <input type="text" id="ride_id" name="ride_id"
                        placeholder="Enter existing Ride ID" required>
@@ -77,6 +76,7 @@
                 </select>
 
                 <button type="submit">Update Trip</button>
+                <p id="updateMessage" role="status" aria-live="polite"></p>
             </form>
         </section>
 
@@ -95,5 +95,6 @@
         <p>&copy; 2026 PedalPulse | Wayne State University</p>
     </footer>
 
+    <script src="update.js"></script>
 </body>
 </html>
